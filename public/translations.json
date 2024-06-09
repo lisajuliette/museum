@@ -1,0 +1,26 @@
+{
+	"en": {
+		"title": "Rembrandt Gallery",
+		"description": "Explore the exquisite collection from the Rijksmuseum",
+		"subtitle": "Subtitle in English",
+		"switchLabel": "Nederlands",
+		"material": "Material",
+		"technique": "Technique",
+		"place": "Place",
+		"period": "Period",
+		"type": "Type",
+		"color": "Color"
+	},
+	"nl": {
+		"title": "Rembrandt Galerij",
+		"description": "Verken de prachtige collectie van het Rijksmuseum",
+		"subtitle": "Subtitle in Dutch",
+		"switchLabel": "English",
+		"material": "Material",
+		"technique": "Technique",
+		"place": "Place",
+		"period": "Period",
+		"type": "Type",
+		"color": "Kleur"
+	}
+}

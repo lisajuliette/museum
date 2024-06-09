@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rijksmuseum Art Gallery
 
-## Getting Started
+This is a simple application to display data fetched from the Rijksmuseum API. It includes a search and filter functionality and a detail page to show in-depth information about selected art pieces.
 
-First, run the development server:
+## Technologies Used
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Masonic (for masonry layout)
+- Lodash (for utility functions)
+- RxJS (for reactive programming)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How to Run
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository.
+2. Install dependencies: `npm install`
+3. Start the development server: `npm run dev`
+4. Open your browser and navigate to `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Features
 
-## Learn More
+- Search and filter artworks from the Rijksmuseum API.
+- Responsive masonry layout for displaying art pieces.
+- Detailed view for each art piece with additional information.
 
-To learn more about Next.js, take a look at the following resources:
+## Decisions and Benefits
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Next.js**: Chosen for its ease of setup and powerful features like server-side rendering and static site generation.
+- **TypeScript**: Provides type safety and better development experience.
+- **Tailwind CSS**: Allows for rapid and consistent styling.
+- **Lodash**: Used for utility functions like debouncing the search input.
+- **RxJS**: Used for handling the search input reactively.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Future Improvements
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Implement image color matching for advanced search.
+- Add a caching layer using a separate Node.js server.
+- Enhance the UI with more detailed styling and animations.

@@ -1,33 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+	font-family: 'Lato', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Playfair Display', serif;
 }
+
+.font-body {
+	font-family: 'Lato', sans-serif;
+}
+
+:root {
+	--foreground-rgb: 0, 0, 0;
+	--background-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+	:root {
+		--foreground-rgb: 255, 255, 255;
+		--background-rgb: 0, 0, 0;
+	}
+} */
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+	color: rgb(var(--foreground-rgb));
+	background: rgb(var(--background-rgb));
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+	.text-balance {
+		text-wrap: balance;
+	}
+}
+
+.hidden-checkbox {
+	position: absolute;
+	opacity: 0;
+}
+
+.color-swatch {
+	width: 24px;
+	height: 24px;
+	border-radius: 4px;
+	margin-right: 8px;
+	border: 2px solid transparent;
+	transition: border 0.2s ease-in-out;
+}
+
+.color-swatch.selected {
+	border: 2px solid #000;
+}
+
+.selected-filter {
+	font-weight: bold;
+	color: #000;
+}
+
+@media (max-width: 768px) {
+	.fixed-filter-button {
+		position: fixed;
+		bottom: 16px;
+		left: 16px;
+		z-index: 50;
+	}
 }
