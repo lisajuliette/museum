@@ -16,10 +16,10 @@
 		"description": "Verken de prachtige collectie van het Rijksmuseum",
 		"subtitle": "Subtitle in Dutch",
 		"switchLabel": "English",
-		"material": "Material",
-		"technique": "Technique",
-		"place": "Place",
-		"period": "Period",
+		"material": "Materiaal",
+		"technique": "Techniek",
+		"place": "Plaats",
+		"period": "Periode",
 		"type": "Type",
 		"color": "Kleur"
 	}
