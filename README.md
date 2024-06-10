@@ -1,6 +1,6 @@
 # Rijksmuseum Art Gallery
 
-This is a simple application to display data fetched from the Rijksmuseum API. It includes a search and filter functionality and a detail page to show in-depth information about selected art pieces.
+This is a simple application to display data fetched from the Rijksmuseum API for Rembrant. It includes a search and filter functionality and a detail page to show in-depth information about selected art pieces.
 
 ## Technologies Used
 
@@ -26,14 +26,7 @@ This is a simple application to display data fetched from the Rijksmuseum API. I
 
 ## Decisions and Benefits
 
-- **Next.js**: Chosen for its ease of setup and powerful features like server-side rendering and static site generation.
-- **TypeScript**: Provides type safety and better development experience.
 - **Tailwind CSS**: Allows for rapid and consistent styling.
+- **Masonic**: Used for the Masonry tiles.
 - **Lodash**: Used for utility functions like debouncing the search input.
 - **RxJS**: Used for handling the search input reactively.
-
-## Future Improvements
-
-- Implement image color matching for advanced search.
-- Add a caching layer using a separate Node.js server.
-- Enhance the UI with more detailed styling and animations.
